@@ -1,0 +1,23 @@
+{
+  "name": "pei-optus",
+  "version": "1.0.0",
+  "description": "Coding test for Optus.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deepak-kapoor/pei-optus.git"
+  },
+  "author": "Deepak Kapoor <kapoordeepak@gmail.com> (http://kapoor.io)",
+  "homepage": "https://github.com/deepak-kapoor/pei-optus",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-sass": "^2.3.2"
+  },
+  "dependencies": {
+    "ractive": "^0.7.3"
+  }
+}
