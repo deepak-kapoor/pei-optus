@@ -2,7 +2,7 @@
 
 (function() {
 
-  var dataService = new DataService([{ id: 1, value: 25 }, { id: 2, value: 50 }, { id: 3, value: 75 }]);
+  var dataService = new DataService([{ id: 1, value: 25 }, { id: 2, value: 50 }, { id: 3, value: 75 }]); // jshint ignore:line
 
   var ractive = new Ractive({
     el: '#container',

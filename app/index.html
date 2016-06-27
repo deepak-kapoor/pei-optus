@@ -3,8 +3,12 @@
 
 <head>
   <title>Optus PEI Coding test by Deepak Kapoor</title>
-  <link rel="stylesheet" href="styles/main.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+
+  <!-- build:css main.css -->
+  <link rel="stylesheet" href="styles/main.css" />
+  <!-- endbuild -->
 
   <script id='template' type='text/ractive'>
     {{#each dataPoints}}
@@ -34,12 +38,15 @@
 <body>
   <div id='container'></div>
 
+  <!-- build:js lib.js -->
+  <script src="../node_modules/ractive/ractive.js"></script>
+  <script src="../node_modules/ractive-events-tap/dist/ractive-events-tap.umd.js"></script>
+  <!-- endbuild -->
 
-  <script src="/node_modules/ractive/ractive.js"></script>
-  <script src="/node_modules/ractive-events-tap/dist/ractive-events-tap.umd.js"></script>
-
+  <!-- build:app app.js -->
   <script src="scripts/dataService.js"></script>
   <script src="scripts/app.js"></script>
+  <!-- endbuild -->
 
 </body>
 

@@ -15,7 +15,7 @@ var _changeValue = function(id, change) {
   return this.dataPoints;
 };
 
-function DataService(values) {
+function DataService(values) { // jshint ignore:line
 	this.dataPoints = values;
 	this.changeValue = _changeValue;
 }
