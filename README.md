@@ -2,6 +2,15 @@
 
 This repository contains code for coding test I did for a role at Optus.
 
+## Requirements
+
+You will need node.js and gulp cli installed on your machine
+
+Install gulp by executing
+```npm install -g gulp-cli```
+
+If the above fails then run it with **sudo**
+
 ## Instructions
 
 Clone the repository.
