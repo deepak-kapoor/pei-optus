@@ -4,7 +4,9 @@ This repository contains code for coding test I did for a role at Optus.
 
 ## Instructions
 
-After cloning the repository run
+Clone the repository.
+
+Go to the directory where you have cloned the repo and run
 
 ```npm install```
 
