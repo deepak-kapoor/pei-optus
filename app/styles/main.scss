@@ -1,0 +1,73 @@
+$light-foreground: #ffffff;
+
+body {
+  font-family: "TradeGothicLTPro",Arial,Helvetica,sans-serif
+}
+
+.bar-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  max-width: 100%;
+  opacity: 0.5;
+  transition: width 0.2s ease-out;
+  -moz-transition: width 0.2s ease-out;
+  -ms-transition: width 0.2s ease-out;
+  -o-transition: width 0.2s ease-out;
+  -webkit-transition: width 0.2s ease-out;
+}
+
+.btn {
+  background: linear-gradient(to bottom, #00a3ad 0%, #00a3ad 95%, #008a92 95%, #008a92 100%);
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  color: $light-foreground;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  -webkit-box-shadow: none;
+}
+
+select {
+  height: 45px;
+  background: $light-foreground;
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  font-size: 20px;
+}
+
+.control-container {
+  display: inline-block;
+}
+
+.control {
+  min-width: 200px;
+  margin: 5px;
+}
+
+@media only screen and (max-device-width: 768px) {
+  .control-container {
+    margin: 20px 0 20px 0;
+    width: 100%;
+    select {
+      width: 100%;
+    }
+  }
+  .control {
+    width: 100%;
+    margin: 5px 0 5px 0;
+  }
+}

@@ -6,6 +6,10 @@ var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 var sass = require('gulp-sass');
 
+var paths = {
+  dist: 'dist/'
+}
+
 gulp.task('jshint', function() {
   return gulp.src('app/scripts/**/*.js')
     .pipe(reload({
@@ -18,13 +22,18 @@ gulp.task('jshint', function() {
 });
 
 gulp.task('styles', function(){
-  return gulp.src('app/styles/site.scss')
+  return gulp.src('app/styles/main.scss')
     .pipe(sass())
     .pipe(gulp.dest('app/styles'))
 });
 
+// gulp.tast('dist', function() {
+  
 
-gulp.task('serve', ['styles'], function () {
+// });
+
+
+gulp.task('serve', ['jshint','styles'], function () {
   browserSync({
     notify: false,
     port: 9000,
@@ -41,17 +50,11 @@ gulp.task('serve', ['styles'], function () {
     'app/*.html',
     'app/views/**/*.html',
     'app/scripts/**/*.js',
-    'app/images/**/*',
-    '.tmp/fonts/**/*'
+    'app/styles/**/*.scss'
   ]).on('change', reload);
 
-  gulp.watch('app/styles/**/*.css', ['styles']);
-  gulp.watch('app/fonts/**/*', ['fonts']);
-  gulp.watch('bower.json', ['wiredep', 'fonts']);
+  gulp.watch('app/styles/**/*.scss', ['styles']);
 });
-
-
-
 
 gulp.task('default', function() {
   gulp.start('serve');

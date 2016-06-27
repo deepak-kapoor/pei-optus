@@ -1,10 +1,46 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Optus PEI Coding test by Deepak Kapoor</title>
+  <title>Optus PEI Coding test by Deepak Kapoor</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script id='template' type='text/ractive'>
+    {{#each dataPoints}}
+    <div class="bar-container">
+      {{value}}%
+      <div class="bar" style="background:{{getBackgroundColor(value)}} ;width:{{value}}%"> </div>
+    </div>
+    {{/each}}
+    <div>
+    <div class="control-container">
+	    <select value='{{selectedDataPoint}}' class="control">
+	      {{#each dataPoints}}
+	      <option value="{{id}}">#progress {{id}}</option>
+	      {{/each}}
+	    </select>
+	    </div>
+	    <div class="control-container">
+	      <button class="control btn" on-tap="changeDataValue:-25">-25</button>
+	      <button class="control btn" on-tap="changeDataValue:-10">-10</button>
+	      <button class="control btn" on-tap="changeDataValue:10">+10</button>
+	      <button class="control btn" on-tap="changeDataValue:25">+25</button>
+	    </div>
+    </div>
+  </script>
 </head>
+
 <body>
-	<h1>Hello</h1>
+  <div id='container'></div>
+
+
+  <script src="/node_modules/ractive/ractive.js"></script>
+  <script src="/node_modules/ractive-events-tap/dist/ractive-events-tap.umd.js"></script>
+
+  <script src="scripts/dataService.js"></script>
+  <script src="scripts/app.js"></script>
 
 </body>
+
 </html>

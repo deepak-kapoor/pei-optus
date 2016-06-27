@@ -14,10 +14,20 @@
   "devDependencies": {
     "browser-sync": "^2.13.0",
     "gulp": "^3.9.1",
+    "gulp-if": "^2.0.1",
+    "gulp-jshint": "^2.0.1",
     "gulp-load-plugins": "^1.2.4",
-    "gulp-sass": "^2.3.2"
+    "gulp-sass": "^2.3.2",
+    "gulp-usemin": "^0.3.23",
+    "jasmine-core": "^2.4.1",
+    "jshint": "^2.9.2",
+    "jshint-stylish": "^2.2.0",
+    "lodash": "^4.13.1"
   },
   "dependencies": {
-    "ractive": "^0.7.3"
+    "install": "^0.8.1",
+    "npm": "^3.10.2",
+    "ractive": "^0.7.3",
+    "ractive-events-tap": "^0.3.0"
   }
 }
