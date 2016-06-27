@@ -67,7 +67,6 @@ gulp.task('serve', ['jshint','styles'], function () {
     }
   });
 
-  // watch for changes
   gulp.watch([
     'app/*.html',
     'app/views/**/*.html',
