@@ -19,7 +19,3 @@ function DataService(values) { // jshint ignore:line
 	this.dataPoints = values;
 	this.changeValue = _changeValue;
 }
-
-
-
-//DataService.prototype.changeValue = _changeValue;

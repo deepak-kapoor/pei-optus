@@ -19,17 +19,17 @@
     {{/each}}
     <div>
     <div class="control-container">
-	    <select value='{{selectedDataPoint}}' class="control">
+	    <select id="progressBarSelector" value='{{selectedDataPoint}}' class="control">
 	      {{#each dataPoints}}
 	      <option value="{{id}}">#progress {{id}}</option>
 	      {{/each}}
 	    </select>
 	    </div>
 	    <div class="control-container">
-	      <button class="control btn" on-tap="changeDataValue:-25">-25</button>
-	      <button class="control btn" on-tap="changeDataValue:-10">-10</button>
-	      <button class="control btn" on-tap="changeDataValue:10">+10</button>
-	      <button class="control btn" on-tap="changeDataValue:25">+25</button>
+	      <button id="btnChangeValueMinusTwentyFive" class="control btn" on-tap="changeDataValue:-25">-25</button>
+	      <button id="btnChangeValueMinusTen" class="control btn" on-tap="changeDataValue:-10">-10</button>
+	      <button id="btnChangeValueTen" class="control btn" on-tap="changeDataValue:10">+10</button>
+	      <button id="btnChangeValueTwentyFive" class="control btn" on-tap="changeDataValue:25">+25</button>
 	    </div>
     </div>
   </script>
